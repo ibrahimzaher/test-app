@@ -112,6 +112,32 @@
           }
         }
       }
+    },
+    "@izaher-dev/testing": {
+      "projectType": "library",
+      "root": "projects/izaher-dev/testing",
+      "sourceRoot": "projects/izaher-dev/testing/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/izaher-dev/testing/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/izaher-dev/testing/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/izaher-dev/testing/tsconfig.spec.json"
+          }
+        }
+      }
     }
   },
   "cli": {

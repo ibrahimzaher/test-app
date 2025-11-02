@@ -4,6 +4,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
+      "@izaher-dev/testing": [
+        "./dist/izaher-dev/testing"
+      ],
       "auth": [
         "./dist/auth"
       ]
@@ -40,6 +43,12 @@
     },
     {
       "path": "./projects/auth/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/izaher-dev/testing/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/izaher-dev/testing/tsconfig.spec.json"
     }
   ]
 }

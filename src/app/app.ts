@@ -1,10 +1,10 @@
-import { AuthComponent } from 'auth';
+import { Testing } from '@izaher-dev/testing';
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, AuthComponent],
+  imports: [RouterOutlet, Testing],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
